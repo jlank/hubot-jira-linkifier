@@ -22,10 +22,7 @@
 
 module.exports = (robot) ->
 
-  try
-    config = require '../../../jira-linkifier'
-  catch e
-    console.error 'no jira-linkifier.json config provided, trying env variables'
+  config = require('rc')('jira-linkifier')
 
   # ENV variable for list of project prefixes
   prefixes = process.env.HUBOT_JIRA_LINKIFIER_PROJECT_PREFIXES?.split(',') || config?.prefixes.split(',') || []
