@@ -1,3 +1,5 @@
+#!/usr/bin/env coffee
+
 JiraClient = require 'jira-connector'
 
 jira = new JiraClient({
