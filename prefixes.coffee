@@ -1,7 +1,7 @@
 JiraClient = require 'jira-connector'
 
 jira = new JiraClient({
-  host: 'sadasystems.atlassian.net',
+  host: 'HOST.atlassian.net',
   basic_auth: {
     username: '',
     password: ''
