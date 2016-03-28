@@ -13,6 +13,7 @@
     "url": "https://github.com/xkickflip/hubot-jira-linkifier/issues"
   },
   "dependencies": {
+    "jira-connector": "^2.1.0",
     "rc": "^1.1.6"
   },
   "peerDependencies": {
